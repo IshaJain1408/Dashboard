@@ -1,0 +1,835 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+        <title>crud dashboard</title>
+	    <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+	    <!----css3---->
+        <link rel="stylesheet" href="css/custom.css">
+		
+		
+		<!--google fonts -->
+	    <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+	
+	
+	   <!--google material icon-->
+      <link href="https://fonts.googleapis.com/css2?family=Material+Icons"rel="stylesheet">
+
+  </head>
+  <body>
+  
+
+
+<div class="wrapper">
+     
+	  <div class="body-overlay"></div>
+	 
+	 <!-------sidebar--design------------>
+	 
+	 <div id="sidebar">
+	    <div class="sidebar-header"  style=" display: flex">
+		   <h3 style="font-size: 14px; display: flex;"><img src="img/logo.png"  style="width:40px;height: 40px; " class="img-fluid"/><span style="margin-top: 12px;">InnovateHub</span></h3>
+		   <a  class="nav-link" href="#" data-toggle="dropdown">
+			<img src="img/user.jpg" style="width:40px; border-radius:50%;position:absolute;top: 20px;right: 8px;"/>
+		   </a>
+		</div>
+		
+		<ul class="list-unstyled component m-0 p-0 ">
+		  <!-- <li class="active">
+		  <a href="#" class="dashboard"><i class="material-icons">dashboard</i>dashboard </a>
+		  </li> -->
+		  
+		  <li class="dropdown text-dark">
+		  <a href="#homeSubmenu1" data-toggle="collapse" aria-expanded="false" 
+		  class="dropdown-toggle text-dark">
+		  <i class="material-icons">draw</i>Design Team
+		  </a>
+		  <ul class="collapse list-unstyled menu" id="homeSubmenu1">
+		     <li><a href="#">layout 1</a></li>
+			 <li><a href="#">layout 2</a></li>
+			 <li><a href="#">layout 3</a></li>
+		  </ul>
+		  </li>
+		  
+		  
+		   <li class="dropdown">
+		  <a href="#homeSubmenu2" data-toggle="collapse" aria-expanded="false" 
+		  class="dropdown-toggle text-dark">
+		  <i class="material-icons">assignment_ind</i>
+		  Marketing  Team
+		  </a>
+		  <ul class="collapse list-unstyled menu" id="homeSubmenu2">
+		     <li><a href="#">Apps 1</a></li>
+			 <li><a href="#">Apps 2</a></li>
+			 <li><a href="#">Apps 3</a></li>
+		  </ul>
+		  </li>
+		  
+		   <li class="dropdown">
+		  <a href="#homeSubmenu3" data-toggle="collapse" aria-expanded="false" 
+		  class="dropdown-toggle text-dark">
+		  <i class="material-icons">code</i>Development Team
+		  </a>
+		  <ul class="collapse list-unstyled menu" id="homeSubmenu3">
+		     <li><a href="#">Pages 1</a></li>
+			 <li><a href="#">Pages 2</a></li>
+			 <li><a href="#">Pages 3</a></li>
+		  </ul>
+		  </li>
+		  <li class="dropdown">
+			<a>
+			<i class="material-icons">create</i>Create Team
+			</a>
+			
+			</li>
+				<div class="d-flex text-secondary">
+					<div class="px-4 flex-grow-1 ">FOLDERS</div>
+					<div class="px-2 "><i class="material-icons my-1 ">add</i></div>
+				  </div>
+				
+		  
+		   <li class="dropdown">
+		  <a href="#homeSubmenu4" data-toggle="collapse" aria-expanded="false" 
+		  class="dropdown-toggle text-dark">
+		  <i class="material-icons ">folder_open</i>Products
+		  </a>
+		  <ul class="collapse list-unstyled menu" id="homeSubmenu4">
+		     <li><a href="#">Pages 1</a></li>
+			 <li><a href="#">Pages 2</a></li>
+			 <li><a href="#">Pages 3</a></li>
+		  </ul>
+		  </li>
+		  
+		   <li class="dropdown">
+		  <a href="#homeSubmenu5" data-toggle="collapse" aria-expanded="false" 
+		  class="dropdown-toggle text-dark">
+		  <i class="material-icons">folder_open</i>Sales
+		  </a>
+		  <ul class="collapse list-unstyled menu" id="homeSubmenu5">
+		     <li><a href="#">Pages 1</a></li>
+			 <li><a href="#">Pages 2</a></li>
+			 <li><a href="#">Pages 3</a></li>
+		  </ul>
+		  </li>
+		  
+		  <li class="dropdown">
+		  <a href="#homeSubmenu6" data-toggle="collapse" aria-expanded="false" 
+		  class="dropdown-toggle text-dark">
+		  <i class="material-icons">folder_open</i>Design
+		  </a>
+		  <ul class="collapse list-unstyled menu" id="homeSubmenu6">
+		     <li><a href="#">table 1</a></li>
+			 <li><a href="#">table 2</a></li>
+			 <li><a href="#">table 3</a></li>
+		  </ul>
+		  </li>
+		  
+		  
+		  <li class="dropdown"> 
+		  <a href="#homeSubmenu7" data-toggle="collapse" aria-expanded="false" 
+		  class="dropdown-toggle text-dark">
+		  <i class="material-icons">folder_open</i>Office
+		  </a>
+		  <ul class="collapse list-unstyled menu" id="homeSubmenu7">
+		     <li><a href="#">Pages 1</a></li>
+			 <li><a href="#">Pages 2</a></li>
+			 <li><a href="#">Pages 3</a></li>
+		  </ul>
+		  </li>
+		   
+		  <li class="dropdown"> 
+			<a href="#homeSubmenu7" data-toggle="collapse" aria-expanded="false" 
+			class="dropdown-toggle text-dark">
+			<i class="material-icons ">folder_open</i>Legal
+			</a>
+			<ul class="collapse list-unstyled menu" id="homeSubmenu7">
+			   <li><a href="#">Pages 1</a></li>
+			   <li><a href="#">Pages 2</a></li>
+			   <li><a href="#">Pages 3</a></li>
+			</ul>
+			</li>
+			
+		   
+		  <li >
+		  <a href="#" class="text-dark"><i class="material-icons">group_add</i>Invite teammates </a>
+		  </li>
+		  <li class="">
+		  <a href="#" class="text-dark"><i class="material-icons">library_books</i> Help and first steps</a>
+		  </li>
+		  
+		
+		
+		</ul>
+		<div class="d-flex justify-content-evenly m-2 hint-text text-dark bg-tertiary text-secondary-emphasis rounded">  <span class="p-1 text-dark">7  <span>days left on trail</span></span><button class="rounded bg-dark text-white border-0">Add billing</button></div>
+	 </div>
+	 
+	 
+   <!-------sidebar--design- close----------->
+   
+   
+   
+      <!-------page-content start----------->
+   
+      <div id="content">
+	     
+		  <!------top-navbar-start-----------> 
+		     
+		  <div class="top-navbar ">
+		     <div class="xd-topbar ">
+			     <div class="row ">
+				     <div class="col-2 col-md-1 col-lg-1 order-2 col-sm-1 order-md-1  col-xs-1 align-self-center">
+					    <div class="xp-menubar">
+						    <span class="material-icons text-white">signal_cellular_alt</span>
+						</div>
+					 </div>
+					 <div class="col-2 col-md-1 col-sm-1 col-lg-1 text-dark order-2 order-md-1 col-xs-1 align-self-center">
+					    <div >Products
+						</div>
+					 </div>
+					
+					 
+					 
+					 <div class="col-10 col-md-10 col-lg-10 order-1  col-sm-8 order-md-3 col-xs-10 ">
+					     <div class="xp-profilebar text-right">
+						    <nav class="navbar p-0">
+							   <ul class="nav navbar-nav flex-row ml-auto">
+							   <div class="xp-searchbar my-2">
+								<div class="col-md-6">
+
+									<div class="form">
+										<i class="material-icons">search</i>
+									  <input type="text" class="form-control form-input" placeholder="Search for...">
+									</div>
+									
+								  </div>
+							</div>
+							   
+							   <li class="nav-item  my-1">
+							     <a class="nav-link" href="#">
+								   <span class="material-icons text-dark text-center">question_answer</span>
+								 </a>
+							   </li>
+							     
+							   <li class="nav-item my-1">
+								<a class="nav-link" href="#">
+								  <span class="material-icons text-dark text-center ">settings</span>
+								</a>
+							  </li>
+							   
+
+							   
+							   </ul>
+							</nav>
+						 </div>
+					 </div>
+					 
+				 </div>
+				 
+				
+				 
+				 
+			 </div>
+		  </div>
+		  <!-- Navbar-->
+<nav class="navbar navbar-expand-lg navbar-light bg-body-tertiary ">
+	<div class="container-fluid justify-content-between border rounded">
+	  <!-- Left elements -->
+	  <div class="d-flex">
+   <ul class="navbar-nav flex-row d-none d-md-flex">
+	<!-- <li class="nav-item me-3 me-lg-1 active">
+	  <a class="nav-link" href="#">
+		<span>
+			<span class="material-icons text-dark">add</span> </span>
+		<span class="badge rounded-pill badge-notification bg-danger">1</span>
+	  </a>
+	</li> -->
+
+	<li class="nav-item me-3 me-lg-1 d-flex">
+		<i class="material-icons text-dark mt-2">border_all</i>
+	  <a class="nav-link" href="#">
+		All brands
+	  </a>
+	</li>
+	
+	<li class="nav-item me-3 me-lg-1 d-flex">
+		
+	  <a class="nav-link" href="#">
+		Desk
+		
+	  </a>
+	  <i class="material-icons text-dark mt-2">keyboard_arrow_down
+	</i>
+	</li>
+	
+	<li class="nav-item me-3 me-lg-1 d-flex">
+	  <a class="nav-link" href="#">
+		Tags
+	  </a>
+	  <i class="material-icons text-dark mt-2">keyboard_arrow_down
+	</i>
+	</li>
+	
+	<li class="nav-item me-3 me-lg-1 d-flex">
+		<i class="material-icons text-dark mt-2">import_export</i>
+	  <a class="nav-link" href="#">
+		Sort
+	  </a>
+	</li>
+	
+	<li class="nav-item me-3 me-lg-1 d-flex">
+		<i class="material-icons text-dark mt-2">filter_list
+		</i>
+	  <a class="nav-link" href="#">
+		Filter
+	  </a>
+	</li>
+
+	<!-- <li class="nav-item me-3 me-lg-1">
+	  <a class="nav-link" href="#">
+		<span class="material-icons text-dark">add</span>
+	  </a>
+	</li>
+
+	<li class="nav-item me-3 me-lg-1">
+	  <a class="nav-link" href="#">
+		<span><span class="material-icons text-dark">add</span></span>
+	  </a>
+	</li>
+
+	<li class="nav-item me-3 me-lg-1">
+	  <a class="nav-link" href="#">
+		<span><span class="material-icons text-dark">add</span></span>
+		<span class="badge rounded-pill badge-notification bg-danger">2</span>
+	  </a>
+	</li> -->
+  </ul>
+	
+	  </div>
+	  <!-- Left elements -->
+  
+	 
+	  <!-- Center elements -->
+  
+	  <!-- Right elements -->
+	  <ul class="navbar-nav flex-row">
+		<!-- <li class="nav-item me-3 me-lg-1">
+		  <a class="nav-link d-sm-flex align-items-sm-center" href="#">
+			<img
+			  src="https://mdbcdn.b-cdn.net/img/new/avatars/1.webp"
+			  class="rounded-circle"
+			  height="22"
+			  alt="Black and White Portrait of a Man"
+			  loading="lazy"
+			/>
+			<strong class="d-none d-sm-block ms-1">John</strong>
+		  </a>
+		</li> -->
+	
+		<li class="nav-item me-3 me-lg-1 d-flex">
+			<i class="material-icons text-dark mt-2">videocam
+			</i>
+		  <a class="nav-link" href="#">
+			Meeting
+		  </a>
+		</li>
+		<li class="nav-item me-3 me-lg-1 d-flex">
+			<i class="material-icons text-dark mt-2">add
+			</i>
+		  <a class="nav-link" href="#">
+			Import/Export
+		  </a>
+		</li>
+		
+	
+		
+	  </ul>
+	  <!-- Right elements -->
+	</div>
+  </nav>
+  <!-- Navbar -->
+		
+		  <!------top-navbar-end-----------> 
+		  
+		  
+		   <!------main-content-start-----------> 
+		     
+		      <div class="main-content">
+			     <div class="row">
+				    <div class="col-md-12">
+					   <div class="table-wrapper">
+					     
+					   <!-- <div class="table-title">
+					     <div class="row">
+						     <div class="col-sm-6 p-0 flex justify-content-lg-start justify-content-center">
+							    <h2 class="ml-lg-2">Manage  Employees</h2>
+							 </div>
+							 <div class="col-sm-6 p-0 flex justify-content-lg-end justify-content-center">
+							   <a href="#addEmployeeModal" class="btn btn-success" data-toggle="modal">
+							   <i class="material-icons">&#xE147;</i>
+							   <span>Add New Employees</span>
+							   </a>
+							   <a href="#deleteEmployeeModal" class="btn btn-danger" data-toggle="modal">
+							   <i class="material-icons">&#xE15C;</i>
+							   <span>Delete</span>
+							   </a>
+							 </div>
+					     </div>
+					   </div>
+					    -->
+					   <table class="table table-striped table-hover">
+					      <thead>
+						     <tr>
+							 <th>
+							 <label for="selectAll"></label></th>
+							 <th><div class="d-flex align-items-center ">
+								<span>Brand</span>
+								<a class="d-flex ml-5"; href="#"  data-bs-toggle="tooltip" data-bs-placement="top" title="Copy">
+								  <i class="material-icons ml-5 fs-1">add
+								  </i>
+								  <!-- <i class="bi bi-files"></i> -->
+								</a>
+							  </div> </th>
+							 <th>Description</th>
+							 <th>Members</th>
+							 <th>Categories</th>
+							 <th>Tags</th>
+							 <th>Next Meeting</th>
+							 <th> <i class="material-icons ml-5 fs-1">add
+							</i></th>
+
+							 </tr>
+						  </thead>
+						  
+						  <tbody>
+						      <tr>
+							 <th><span class="custom-checkbox">
+							 <input type="checkbox" id="checkbox1" name="option[]" value="1">
+							 <label for="checkbox1"></label></th>
+							 <th>
+								<div class="d-flex align-items-center">
+								  <img class="rounded mr-2" src="img/slider/logo5.png" alt="Wix Logo" />
+								  <span>Wix</span>
+								  <a class="d-flex ml-5"; href="#" class="ml-5" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy">
+									<i class="material-icons  fs-1">question_answer
+									</i><span>2</span>
+									<!-- <i class="bi bi-files"></i> -->
+								  </a>
+								</div>
+							  </th>
+							 <!-- <th><img class="rounded mr-2" src="img/slider/logo5.png" />Wix</th> -->
+							 <th>Develop a  personalized</th>
+							 <th>
+								<div class="d-flex  align-items-center avatar-group ">
+								  <div class="avatar">
+									<img src="img/user2.png" alt="Avatar" class="rounded-circle pull-up">
+								  </div>
+								  <div class="avatar">
+									<img src="img/user3.png" alt="Avatar" class="rounded-circle pull-up">
+								  </div>
+								  <div class="avatar">
+									<img src="img/user4.png" alt="Avatar" class="rounded-circle pull-up">
+								  </div>
+								
+								</div>
+							  </th>
+							  
+							 <th><div class=" rounded text-center bg-green">Automation</div></th>
+							 <th>
+								<div class="text-center rounded border pl-1 pr-1">	 #B2B</div>
+
+							 </th>
+							 <th><div class="d-flex  gap1 "> <div class="text-center rounded  bg-yellow gap1 pl-1 pr-1 ">Today</div>
+								<div class="text-center rounded  bg-green pl-1 pr-1">	Tomorrow</div></div></th>
+								<th> </th>
+
+							 </tr>
+							 
+							 
+							  <tr>
+							 <th><span class="custom-checkbox">
+							 <input type="checkbox" id="checkbox2" name="option[]" value="1">
+							 <label for="checkbox2"></label></th>
+							 <th>
+								<div class="d-flex align-items-center">
+								  <img class="rounded mr-2" src="img/slider/logo3.png" alt="Wix Logo" />
+								  <span>Wix</span>
+								  <a class="d-flex ml-5"; href="#" class="ml-5" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy">
+									<i class="material-icons  fs-1">question_answer
+									</i><span>2</span>
+									<!-- <i class="bi bi-files"></i> -->
+								  </a>
+								</div>
+							  </th>
+							 <th>dominiquePerrier@gmail.com</th>
+							  <th>
+								<div class="d-flex  align-items-center avatar-group ">
+								  <div class="avatar">
+									<img src="img/user.jpg" alt="Avatar" class="rounded-circle pull-up">
+								  </div>
+								  <div class="avatar">
+									<img src="img/user2.png" alt="Avatar" class="rounded-circle pull-up">
+								  </div>
+								  <div class="avatar">
+									<img src="img/user3.png" alt="Avatar" class="rounded-circle pull-up">
+								  </div>
+								 
+								</div>
+							  </th>
+							 <th><div class=" rounded text-center bg-purple">Automation</div></th>
+							 <th>
+								<div class="text-center rounded border">	 #B2C</div>
+							
+							 </th>
+							 <th>
+								<div class="d-flex  gap1 "> <div class="text-center rounded  bg-yellow gap1 pl-1 pr-1 ">Today</div>
+								<div class="text-center rounded  bg-green pl-1 pr-1">	Tomorrow</div></div>
+							 </th>
+							 <th> </th>
+							 </tr>
+							 
+							 
+							 <tr>
+							 <th><span class="custom-checkbox">
+							 <input type="checkbox" id="checkbox3" name="option[]" value="1">
+							 <label for="checkbox3"></label></th>
+							 <th>
+								<div class="d-flex align-items-center">
+								  <img class="rounded mr-2" src="img/slider/logo4.png" alt="Wix Logo" />
+								  <span>Wix</span>
+								  <a class="d-flex ml-5"; href="#" class="ml-5" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy">
+									<i class="material-icons  fs-1">question_answer
+									</i><span>2</span>
+									<!-- <i class="bi bi-files"></i> -->
+								  </a>
+								</div>
+							  </th>
+							 <th>MarariAndres@gmail.com</th>
+							 <th> 
+								<div class="d-flex  align-items-center avatar-group ">
+								  <div class="avatar">
+									<img src="img/user2.png" alt="Avatar" class="rounded-circle pull-up">
+								  </div>
+								  <div class="avatar">
+									<img src="img/user4.png" alt="Avatar" class="rounded-circle pull-up">
+								  </div>
+								  <div class="avatar">
+									<img src="img/user6 .png" alt="Avatar" class="rounded-circle pull-up">
+								  </div>
+								
+								</div>
+							  </th>
+							 <th><div class="rounded text-center bg-blue pl-1 pr-1">Automation</div></th>
+							 <th>
+								<div class="text-center rounded border">	 #Saas</div>
+						
+							 </th>
+							 <th> <div class="d-flex  gap1 "> <div class="text-center rounded  bg-yellow gap1 pl-1 pr-1 ">Today</div>
+								<div class="text-center rounded  bg-green pl-1 pr-1">	Tomorrow</div></div>
+							 </th>
+							 <th> </th>
+
+							 </tr>
+							 
+							  <tr>
+							 <th><span class="custom-checkbox">
+							 <input type="checkbox" id="checkbox4" name="option[]" value="1">
+							 <label for="checkbox4"></label></th>
+							 <th>
+								<div class="d-flex align-items-center">
+								  <img class="rounded mr-2" src="img/slider/logo2.png" alt="Wix Logo" />
+								  <span>Wix</span>
+								  <a class="d-flex ml-5"; href="#" class="ml-5" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy">
+									<i class="material-icons  fs-1">question_answer
+									</i><span>2</span>
+									<!-- <i class="bi bi-files"></i> -->
+								  </a>
+								</div>
+							  </th>
+							 <th>The Tool would</th>
+							 <th>
+								<div class="d-flex  align-items-center avatar-group ">
+								  <div class="avatar">
+									<img src="img/user3.png" alt="Avatar" class="rounded-circle pull-up">
+								  </div>
+								  <div class="avatar">
+									<img src="img/user2.png" alt="Avatar" class="rounded-circle pull-up">
+								  </div>
+								  <div class="avatar">
+									<img src="img/user.jpg" alt="Avatar" class="rounded-circle pull-up">
+								  </div>
+								
+								</div>
+							  </th>
+							 <th><div class=" rounded text-center bg-yellow pl-1 pr-1">Automation</div></th>
+							 <th>
+								<div class="text-center rounded border">	 #B2C</div>
+
+							 </th>
+							 <th> <div class="d-flex  gap1 "> <div class="text-center rounded  bg-yellow gap1 pl-1 pr-1 ">Today</div>
+								<div class="text-center rounded  bg-green pl-1 pr-1">	Tomorrow</div></div>
+							 </th>
+							 <th> </th>
+
+							 </tr>
+							 <tr>
+								<th> </th>
+								<th><div class="d-flex align-items-end ml-5">
+									<a class="d-flex ml-5" href="#" cdata-bs-toggle="tooltip" data-bs-placement="top" title="Copy">
+									  <i class="material-icons  fs-1">repeat_one
+
+									  </i><span>count</span>
+									  <!-- <i class="bi bi-files"></i> -->
+									</a>
+								  </div> </th>
+								  <th><div class="d-flex align-items-end ml-4">
+									<a class="d-flex ml-5" href="#" cdata-bs-toggle="tooltip" data-bs-placement="top" title="Copy">
+									  <i class="material-icons  fs-1">add
+									  </i><span>Add  calculation</span>
+									  <!-- <i class="bi bi-files"></i> -->
+									</a>
+								  </div> </th>
+								  <th><div class="d-flex align-items-end ">
+									<a class="d-flex ml-1" href="#" cdata-bs-toggle="tooltip" data-bs-placement="top" title="Copy">
+									  <i class="material-icons  fs-1">add
+									  </i><span>Add  calculation</span>
+									  <!-- <i class="bi bi-files"></i> -->
+									</a>
+								  </div> </th>
+								  <th><div class="d-flex align-items-end ">
+									<a class="d-flex ml-1 w-full" href="#" cdata-bs-toggle="tooltip" data-bs-placement="top" title="Copy">
+									  <i class="material-icons  fs-1">add
+									  </i><span>Add  </span>
+									  <!-- <i class="bi bi-files"></i> -->
+									</a>
+								  </div> </th>
+							
+								  <th><div class="d-flex align-items-end ">
+									<a class="d-flex ml-3 w" href="#" cdata-bs-toggle="tooltip" data-bs-placement="top" title="Copy">
+									  <i class="material-icons  fs-1">add
+									  </i><span>Add  </span>
+									  <!-- <i class="bi bi-files"></i> -->
+									</a>
+								  </div> </th>
+								  <th></th>
+								  <th></th>
+
+							 </tr>
+						  </tbody>
+					   </table>
+					   <div class="clearfix">
+					     <div class="hint-text">showing <b>5</b> out of <b>25</b></div>
+					     <ul class="pagination">
+						    <li class="page-item disabled"><a href="#">Previous</a></li>
+							<li class="page-item "><a href="#"class="page-link">1</a></li>
+							<li class="page-item "><a href="#"class="page-link">2</a></li>
+							<li class="page-item active"><a href="#"class="page-link">3</a></li>
+							<li class="page-item "><a href="#"class="page-link">4</a></li>
+							<li class="page-item "><a href="#"class="page-link">5</a></li>
+							<li class="page-item "><a href="#" class="page-link">Next</a></li>
+						 </ul>
+					   </div>
+					   
+					   
+					 
+	
+					   <!-- <div class="table-title">
+						<div class="row">
+							
+							<div class="col-sm-6 p-0 flex justify-content-lg-end justify-content-center">
+							  <a href="#addEmployeeModal" class="btn btn-success" data-toggle="modal">
+							  <i class="material-icons">&#xE147;</i>
+							  <span>Add New Employees</span>
+							  </a>
+							  <a href="#deleteEmployeeModal" class="btn btn-danger" data-toggle="modal">
+							  <i class="material-icons">&#xE15C;</i>
+							  <span>Delete</span>
+							  </a>
+							</div>
+						</div>
+					  </div> -->
+					  
+					   
+					   
+					   
+					   </div>
+					</div>
+					
+					
+									   <!----add-modal start--------->
+		<div class="modal fade" tabindex="-1" id="addEmployeeModal" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Add Employees</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="form-group">
+		    <label>Name</label>
+			<input type="text" class="form-control" required>
+		</div>
+		<div class="form-group">
+		    <label>Email</label>
+			<input type="emil" class="form-control" required>
+		</div>
+		<div class="form-group">
+		    <label>Address</label>
+			<textarea class="form-control" required></textarea>
+		</div>
+		<div class="form-group">
+		    <label>Phone</label>
+			<input type="text" class="form-control" required>
+		</div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+        <button type="button" class="btn btn-success">Add</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+					   <!----edit-modal end--------->
+					   
+					   
+					   
+					   
+					   
+				   <!----edit-modal start--------->
+		<div class="modal fade" tabindex="-1" id="editEmployeeModal" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Edit Employees</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="form-group">
+		    <label>Name</label>
+			<input type="text" class="form-control" required>
+		</div>
+		<div class="form-group">
+		    <label>Email</label>
+			<input type="emil" class="form-control" required>
+		</div>
+		<div class="form-group">
+		    <label>Address</label>
+			<textarea class="form-control" required></textarea>
+		</div>
+		<div class="form-group">
+		    <label>Phone</label>
+			<input type="text" class="form-control" required>
+		</div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+        <button type="button" class="btn btn-success">Save</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+					   <!----edit-modal end--------->	   
+					   
+					   
+					 <!----delete-modal start--------->
+		<div class="modal fade" tabindex="-1" id="deleteEmployeeModal" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Delete Employees</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p>Are you sure you want to delete this Records</p>
+		<p class="text-warning"><small>this action Cannot be Undone,</small></p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+        <button type="button" class="btn btn-success">Delete</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+					   <!----edit-modal end--------->   
+					   
+					
+					
+				 
+			     </div>
+			  </div>
+		  
+		    <!------main-content-end-----------> 
+		  
+		 
+		 
+		 <!----footer-design------------->
+		 
+		 <!-- <footer class="footer">
+		    <div class="container-fluid">
+			   <div class="footer-in">
+			      <p class="mb-0">&copy 2021 Vishweb Design . All Rights Reserved.</p>
+			   </div>
+			</div>
+		 </footer> -->
+		 
+		 
+		 
+		 
+	  </div>
+   
+</div>
+
+
+
+<!-------complete html----------->
+
+
+
+
+
+  
+     <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+   <script src="js/jquery-3.3.1.slim.min.js"></script>
+   <script src="js/popper.min.js"></script>
+   <script src="js/bootstrap.min.js"></script>
+   <script src="js/jquery-3.3.1.min.js"></script>
+  
+  
+  <script type="text/javascript">
+       $(document).ready(function(){
+	      $(".xp-menubar").on('click',function(){
+		    $("#sidebar").toggleClass('active');
+			$("#content").toggleClass('active');
+		  });
+		  
+		  $('.xp-menubar,.body-overlay').on('click',function(){
+		     $("#sidebar,.body-overlay").toggleClass('show-nav');
+		  });
+		  
+	   });
+  </script>
+  
+  
+
+
+
+  </body>
+  
+  </html>
+
+
