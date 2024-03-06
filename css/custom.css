@@ -255,7 +255,30 @@ overflow:auto;
    #sidebar ul li.dropdown{
 	   position:sticky;
    }
-   
+   @media (max-width: 767px) {
+	.navbar-nav.flex-row > .nav-item {
+	  font-size: 12px !important;
+
+	}
+	.material-icons {
+		font-size: 12px !important;
+	}
+	
+  }
+  @media (max-width: 567px) {
+	.navbar-nav.flex-row > .nav-item {
+	  font-size: 12px !important;
+	  display: flexbox !important;
+	  /* transform: translateY(-50%) !important; */
+	  /* flex-wrap: wrap !important; */
+
+	}
+	
+}
+
+
+	
+
    
      #sidebar ul.component{
 		 padding:20px 0px;  
@@ -750,6 +773,7 @@ gap:10px;
 				box-shadow:none;
 				background:#ddd;
 			}
+	
 			
 	      /*--table design end----*/ 
 	   
